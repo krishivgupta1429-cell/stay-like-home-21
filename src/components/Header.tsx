@@ -1,4 +1,5 @@
 import { Search, Globe, Menu, User } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -33,6 +34,14 @@ const Header = () => {
               <span className="text-sm font-medium hover:bg-gray-50 px-3 py-2 rounded-full cursor-pointer">
                 Airbnb your home
               </span>
+            </div>
+            <div className="hidden md:block">
+              <Link
+                to="/contact-us"
+                className="text-sm font-medium hover:bg-gray-50 px-3 py-2 rounded-full"
+              >
+                Contact
+              </Link>
             </div>
             <Button variant="ghost" size="sm" className="rounded-full">
               <Globe className="h-4 w-4" />
